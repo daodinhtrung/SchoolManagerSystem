@@ -2,16 +2,17 @@
     <a href="dashboard.php" class="logo">
         <!-- <i class='bx bx-book-bookmark'></i> -->
         <img src="../images/logo.png">
-          <div class="logo-name"><span class="text-warning">E</span><span class="darkTextColor">R</span><span class="text-warning">P</span></div>
+        <div class="logo-name"><span class="darkTextColor">VNU</span><span class="text-warning">I</span><span
+                class="text-warning">S</span></div>
     </a>
-    
+
     <ul class="side-menu-opener">
         <!-- <li>
             <div class='open-arrow SidebarOpener'><i class='bx bxs-chevron-right'></i></div>
         </li> -->
     </ul>
 
-    
+
     <ul class="side-menu main-side-board">
         <li><a href="dashboard.php"><i class='bx bxs-dashboard'></i>Dashboard</a></li>
         <li><a href="student.php"><i class='bx bxs-user-detail'></i>Student</a></li>
