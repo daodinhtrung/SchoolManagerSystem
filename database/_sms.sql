@@ -2,10 +2,10 @@
 -- version 5.2.1
 -- https://www.phpmyadmin.net/
 --
--- Host: 127.0.0.1
--- Generation Time: Jun 19, 2024 at 01:43 PM
--- Server version: 10.4.32-MariaDB
--- PHP Version: 8.1.25
+-- Máy chủ: 127.0.0.1
+-- Thời gian đã tạo: Th6 05, 2025 lúc 03:33 PM
+-- Phiên bản máy phục vụ: 10.4.32-MariaDB
+-- Phiên bản PHP: 8.2.12
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -18,13 +18,13 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `_sms`
+-- Cơ sở dữ liệu: `_sms`
 --
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `admins`
+-- Cấu trúc bảng cho bảng `admins`
 --
 
 CREATE TABLE `admins` (
@@ -40,16 +40,16 @@ CREATE TABLE `admins` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
 
 --
--- Dumping data for table `admins`
+-- Đang đổ dữ liệu cho bảng `admins`
 --
 
 INSERT INTO `admins` (`s_no`, `id`, `fname`, `lname`, `dob`, `image`, `phone`, `gender`, `address`) VALUES
-(2, 'A9876543210', 'Admin', 'Kumar', '12/11/2024', 'A98765432101718792069.png', '1234567890', 'male', 'no where');
+(2, 'A9876543210', 'Admin', 'Phong', '12/11/2024', 'A98765432101718792069.png', '1234567890', 'male', 'no where');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `attendence`
+-- Cấu trúc bảng cho bảng `attendence`
 --
 
 CREATE TABLE `attendence` (
@@ -62,7 +62,7 @@ CREATE TABLE `attendence` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
--- Dumping data for table `attendence`
+-- Đang đổ dữ liệu cho bảng `attendence`
 --
 
 INSERT INTO `attendence` (`s_no`, `student_id`, `attendence`, `class`, `section`, `date`) VALUES
@@ -71,7 +71,7 @@ INSERT INTO `attendence` (`s_no`, `student_id`, `attendence`, `class`, `section`
 -- --------------------------------------------------------
 
 --
--- Table structure for table `buses`
+-- Cấu trúc bảng cho bảng `buses`
 --
 
 CREATE TABLE `buses` (
@@ -83,7 +83,7 @@ CREATE TABLE `buses` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
--- Dumping data for table `buses`
+-- Đang đổ dữ liệu cho bảng `buses`
 --
 
 INSERT INTO `buses` (`s_no`, `bus_id`, `bus_title`, `bus_number`, `request`) VALUES
@@ -94,7 +94,7 @@ INSERT INTO `buses` (`s_no`, `bus_id`, `bus_title`, `bus_number`, `request`) VAL
 -- --------------------------------------------------------
 
 --
--- Table structure for table `bus_root`
+-- Cấu trúc bảng cho bảng `bus_root`
 --
 
 CREATE TABLE `bus_root` (
@@ -106,7 +106,7 @@ CREATE TABLE `bus_root` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
--- Dumping data for table `bus_root`
+-- Đang đổ dữ liệu cho bảng `bus_root`
 --
 
 INSERT INTO `bus_root` (`s_no`, `bus_id`, `location`, `arrival_time`, `serial`) VALUES
@@ -122,7 +122,7 @@ INSERT INTO `bus_root` (`s_no`, `bus_id`, `location`, `arrival_time`, `serial`) 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `bus_staff`
+-- Cấu trúc bảng cho bảng `bus_staff`
 --
 
 CREATE TABLE `bus_staff` (
@@ -135,7 +135,7 @@ CREATE TABLE `bus_staff` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
--- Dumping data for table `bus_staff`
+-- Đang đổ dữ liệu cho bảng `bus_staff`
 --
 
 INSERT INTO `bus_staff` (`s_no`, `id`, `bus_id`, `name`, `contact`, `role`) VALUES
@@ -149,7 +149,7 @@ INSERT INTO `bus_staff` (`s_no`, `id`, `bus_id`, `name`, `contact`, `role`) VALU
 -- --------------------------------------------------------
 
 --
--- Table structure for table `classes`
+-- Cấu trúc bảng cho bảng `classes`
 --
 
 CREATE TABLE `classes` (
@@ -162,7 +162,7 @@ CREATE TABLE `classes` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `exams`
+-- Cấu trúc bảng cho bảng `exams`
 --
 
 CREATE TABLE `exams` (
@@ -178,18 +178,18 @@ CREATE TABLE `exams` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
--- Dumping data for table `exams`
+-- Đang đổ dữ liệu cho bảng `exams`
 --
 
 INSERT INTO `exams` (`s_no`, `exam_id`, `exam_title`, `subject`, `class`, `section`, `total_marks`, `passing_marks`, `timestamp`) VALUES
 (3, 'E17187917486672ae442b976', 'Monthly test ', 'ALL', '12c', 'A', '100', '33', '2024-06-19 15:39:08'),
-(4, 'E17187928006672b26095672', 'Hindi exam result', 'Hindi', '12c', 'A', '100', '33', '2024-06-19 15:56:40'),
+(4, 'E17187928006672b26095672', 'Programing 1', 'Programing 1', '12c', 'A', '100', '33', '2024-06-19 15:56:40'),
 (5, 'E17187929656672b305cbb25', 'sldfj', 'ALL', '12c', 'A', '100', '33', '2024-06-19 15:59:25');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `feedback`
+-- Cấu trúc bảng cho bảng `feedback`
 --
 
 CREATE TABLE `feedback` (
@@ -201,7 +201,7 @@ CREATE TABLE `feedback` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
--- Dumping data for table `feedback`
+-- Đang đổ dữ liệu cho bảng `feedback`
 --
 
 INSERT INTO `feedback` (`s_no`, `sender_id`, `receiver_id`, `msg`, `timestamp`) VALUES
@@ -211,7 +211,7 @@ INSERT INTO `feedback` (`s_no`, `sender_id`, `receiver_id`, `msg`, `timestamp`) 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `fee_record`
+-- Cấu trúc bảng cho bảng `fee_record`
 --
 
 CREATE TABLE `fee_record` (
@@ -228,7 +228,7 @@ CREATE TABLE `fee_record` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `leaves`
+-- Cấu trúc bảng cho bảng `leaves`
 --
 
 CREATE TABLE `leaves` (
@@ -243,17 +243,17 @@ CREATE TABLE `leaves` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
--- Dumping data for table `leaves`
+-- Đang đổ dữ liệu cho bảng `leaves`
 --
 
 INSERT INTO `leaves` (`s_no`, `sender_id`, `send_date`, `leave_type`, `leave_desc`, `start_date`, `end_date`, `status`) VALUES
-(12, 'T1718791191', '2024-06-19 15:48:43', 'Medical Leave', 'accept my leave otherwise ....... ', '2024-06-20 00:00:00', '2024-06-27 00:00:00', 'pending'),
-(13, 'T1718791191', '2024-06-19 15:49:23', 'Casual Leave', 'I want some rest please give me leave', '2024-06-29 00:00:00', '2024-07-03 00:00:00', 'pending');
+(12, 'T1718791191', '2024-06-19 15:48:43', 'Medical Leave', 'accept my leave otherwise ....... ', '2024-06-20 00:00:00', '2024-06-27 00:00:00', 'rejected'),
+(13, 'T1718791191', '2024-06-19 15:49:23', 'Casual Leave', 'I want some rest please give me leave', '2024-06-29 00:00:00', '2024-07-03 00:00:00', 'rejected');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `marks`
+-- Cấu trúc bảng cho bảng `marks`
 --
 
 CREATE TABLE `marks` (
@@ -265,7 +265,7 @@ CREATE TABLE `marks` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
--- Dumping data for table `marks`
+-- Đang đổ dữ liệu cho bảng `marks`
 --
 
 INSERT INTO `marks` (`s_no`, `exam_id`, `subject`, `student_id`, `marks`) VALUES
@@ -280,7 +280,7 @@ INSERT INTO `marks` (`s_no`, `exam_id`, `subject`, `student_id`, `marks`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `notes`
+-- Cấu trúc bảng cho bảng `notes`
 --
 
 CREATE TABLE `notes` (
@@ -296,7 +296,7 @@ CREATE TABLE `notes` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
--- Dumping data for table `notes`
+-- Đang đổ dữ liệu cho bảng `notes`
 --
 
 INSERT INTO `notes` (`s_no`, `sender_id`, `editor_id`, `class`, `subject`, `title`, `comment`, `file`, `timestamp`) VALUES
@@ -305,7 +305,7 @@ INSERT INTO `notes` (`s_no`, `sender_id`, `editor_id`, `class`, `subject`, `titl
 -- --------------------------------------------------------
 
 --
--- Table structure for table `notice`
+-- Cấu trúc bảng cho bảng `notice`
 --
 
 CREATE TABLE `notice` (
@@ -322,7 +322,7 @@ CREATE TABLE `notice` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
--- Dumping data for table `notice`
+-- Đang đổ dữ liệu cho bảng `notice`
 --
 
 INSERT INTO `notice` (`s_no`, `sender_id`, `editor_id`, `title`, `body`, `file`, `importance`, `timestamp`, `role`, `class`) VALUES
@@ -333,7 +333,7 @@ INSERT INTO `notice` (`s_no`, `sender_id`, `editor_id`, `title`, `body`, `file`,
 -- --------------------------------------------------------
 
 --
--- Table structure for table `notifications`
+-- Cấu trúc bảng cho bảng `notifications`
 --
 
 CREATE TABLE `notifications` (
@@ -351,7 +351,7 @@ CREATE TABLE `notifications` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `payroll`
+-- Cấu trúc bảng cho bảng `payroll`
 --
 
 CREATE TABLE `payroll` (
@@ -367,7 +367,7 @@ CREATE TABLE `payroll` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `reminders`
+-- Cấu trúc bảng cho bảng `reminders`
 --
 
 CREATE TABLE `reminders` (
@@ -378,7 +378,7 @@ CREATE TABLE `reminders` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
 
 --
--- Dumping data for table `reminders`
+-- Đang đổ dữ liệu cho bảng `reminders`
 --
 
 INSERT INTO `reminders` (`s_no`, `id`, `message`, `status`) VALUES
@@ -390,7 +390,7 @@ INSERT INTO `reminders` (`s_no`, `id`, `message`, `status`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `students`
+-- Cấu trúc bảng cho bảng `students`
 --
 
 CREATE TABLE `students` (
@@ -416,16 +416,16 @@ CREATE TABLE `students` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
--- Dumping data for table `students`
+-- Đang đổ dữ liệu cho bảng `students`
 --
 
 INSERT INTO `students` (`s_no`, `id`, `fname`, `lname`, `father`, `gender`, `class`, `section`, `dob`, `image`, `phone`, `email`, `address`, `city`, `zip`, `state`, `request_date`, `request_time`, `request`) VALUES
-(1, 'S1718791292', 'Student', 'kumar', 'father G', 'Male', '12c', 'A', '19-06-2024', 'S17187912921718791292.png', '7894561230', 'student@gmail.com', 'near teachers house', 'home town', '789654', 'Panjab', '', '', '');
+(1, 'S1718791292', 'Đào Đình', 'Trung', 'Vũ Thiện', 'Male', '12c', 'A', '19-06-2024', 'S17187912921718791292.png', '7894561230', 'student@gmail.com', 'near teachers house', 'home town', '789654', 'Panjab', '', '', '');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `student_guardian`
+-- Cấu trúc bảng cho bảng `student_guardian`
 --
 
 CREATE TABLE `student_guardian` (
@@ -440,16 +440,16 @@ CREATE TABLE `student_guardian` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
--- Dumping data for table `student_guardian`
+-- Đang đổ dữ liệu cho bảng `student_guardian`
 --
 
 INSERT INTO `student_guardian` (`s_no`, `id`, `gname`, `gphone`, `gaddress`, `gcity`, `gzip`, `relation`) VALUES
-(1, 'S1718791292', 'Regan Clemons', '4567894562', 'Eum sit et laboriosa', 'Abbot', 'Hunter', 'Culpa odio laboriosa');
+(1, 'S1718791292', 'Vũ Thiện', '4567894562', 'Ha Noi', 'Ha Noi', '', 'Father');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `subjects`
+-- Cấu trúc bảng cho bảng `subjects`
 --
 
 CREATE TABLE `subjects` (
@@ -460,18 +460,18 @@ CREATE TABLE `subjects` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
--- Dumping data for table `subjects`
+-- Đang đổ dữ liệu cho bảng `subjects`
 --
 
 INSERT INTO `subjects` (`s_no`, `subject_id`, `subject_name`, `class`) VALUES
-(1, '12c6672ac911a253', 'Hindi', '12c'),
+(1, '12c6672ac911a253', 'Programing 1', '12c'),
 (2, '12c6672ac9c45d68', 'Commerce', '12c'),
 (3, '12c6672aca78c3c7', 'English', '12c');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `syllabus`
+-- Cấu trúc bảng cho bảng `syllabus`
 --
 
 CREATE TABLE `syllabus` (
@@ -482,17 +482,17 @@ CREATE TABLE `syllabus` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
--- Dumping data for table `syllabus`
+-- Đang đổ dữ liệu cho bảng `syllabus`
 --
 
 INSERT INTO `syllabus` (`s_no`, `class`, `subject`, `file`) VALUES
-(12, '12c', 'Hindi', 'T17187911911718792274.png'),
+(12, '12c', 'Programing 1\r\n', 'T17187911911718792274.png'),
 (13, '12c', 'English', 'T17187911911718792285.png');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `teachers`
+-- Cấu trúc bảng cho bảng `teachers`
 --
 
 CREATE TABLE `teachers` (
@@ -516,16 +516,16 @@ CREATE TABLE `teachers` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
 
 --
--- Dumping data for table `teachers`
+-- Đang đổ dữ liệu cho bảng `teachers`
 --
 
 INSERT INTO `teachers` (`s_no`, `id`, `fname`, `lname`, `father`, `subject`, `gender`, `dob`, `image`, `phone`, `email`, `address`, `city`, `zip`, `state`, `class`, `section`) VALUES
-(1, 'T1718791191', 'teacher', 'kumar', '', 'Hindi', 'Male', '19-06-2024', 'T17187911911718792416.png', '7896541230', 'teacher@gmail.com', 'near admins house', 'home town', '478548', 'Delhi', '12c', 'A');
+(1, 'T1718791191', 'Dang Tran', 'Tri Hieu', '', 'Viet Nam', 'Male', '01-02-2004', 'T17187911911749088541.jpg', '7896541230', 'teacher@gmail.com', 'near admins house', 'home town', '478548', 'Delhi', '12c', 'A');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `teacher_guardian`
+-- Cấu trúc bảng cho bảng `teacher_guardian`
 --
 
 CREATE TABLE `teacher_guardian` (
@@ -540,16 +540,16 @@ CREATE TABLE `teacher_guardian` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
 
 --
--- Dumping data for table `teacher_guardian`
+-- Đang đổ dữ liệu cho bảng `teacher_guardian`
 --
 
 INSERT INTO `teacher_guardian` (`s_no`, `id`, `gname`, `gphone`, `gaddress`, `gcity`, `gzip`, `relation`) VALUES
-(1, 'T1718791191', 'Velma Walker', '1234567895', 'Sit voluptas nisi v', 'Maggie', 'Mckee', 'Consequatur Volupta');
+(1, 'T1718791191', 'Nguyen Tran Quang', '1234567895', '', '', '', '');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `time_table`
+-- Cấu trúc bảng cho bảng `time_table`
 --
 
 CREATE TABLE `time_table` (
@@ -569,23 +569,23 @@ CREATE TABLE `time_table` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
--- Dumping data for table `time_table`
+-- Đang đổ dữ liệu cho bảng `time_table`
 --
 
 INSERT INTO `time_table` (`s_no`, `class`, `section`, `start_time`, `end_time`, `mon`, `tue`, `wed`, `thu`, `fri`, `sat`, `editor_id`, `timestamp`) VALUES
-(1, '12c', 'A', '07:00', '08:00', 'Hindi', '', '', '', '', '', 'A9876543210', '2024-06-19 15:37:37'),
+(1, '12c', 'A', '07:00', '08:00', 'Programing 1', '', '', '', '', '', 'A9876543210', '2024-06-19 15:37:37'),
 (2, '12c', 'A', '08:00', '09:00', 'English', '', '', '', '', '', 'A9876543210', '2024-06-19 15:37:37'),
 (3, '12c', 'A', '09:00', '10:00', 'Math', '', '', '', '', '', 'A9876543210', '2024-06-19 15:37:37'),
-(4, '12c', 'A', '10:00', '11:00', 'Hindi', '', '', '', '', '', 'A9876543210', '2024-06-19 15:37:37'),
+(4, '12c', 'A', '10:00', '11:00', 'Programing 1', '', '', '', '', '', 'A9876543210', '2024-06-19 15:37:37'),
 (5, '12c', 'A', '11:00', '12:00', 'English', '', '', '', '', '', 'A9876543210', '2024-06-19 15:37:37'),
 (6, '12c', 'A', '12:00', '01:00', 'Commerce', '', '', '', '', '', 'A9876543210', '2024-06-19 15:37:37'),
 (7, '12c', 'A', '01:00', '02:00', 'Commerce', '', '', '', '', '', 'A9876543210', '2024-06-19 15:37:37'),
-(8, '12c', 'A', '02:00', '03:00', 'Hindi', '', '', '', '', '', 'A9876543210', '2024-06-19 15:37:37');
+(8, '12c', 'A', '02:00', '03:00', 'Programing 1', '', '', '', '', '', 'A9876543210', '2024-06-19 15:37:37');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `users`
+-- Cấu trúc bảng cho bảng `users`
 --
 
 CREATE TABLE `users` (
@@ -598,7 +598,7 @@ CREATE TABLE `users` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
 
 --
--- Dumping data for table `users`
+-- Đang đổ dữ liệu cho bảng `users`
 --
 
 INSERT INTO `users` (`s_no`, `id`, `email`, `password_hash`, `role`, `theme`) VALUES
@@ -608,297 +608,297 @@ INSERT INTO `users` (`s_no`, `id`, `email`, `password_hash`, `role`, `theme`) VA
 (4, 'O7898987845', 'owner@gmail.com', '$2y$10$2MrhbQa30mll8mKG6LPyjuI7CQPC4abCvqrSvczxXVRu4RVueRfoe', 'owner', 'light');
 
 --
--- Indexes for dumped tables
+-- Chỉ mục cho các bảng đã đổ
 --
 
 --
--- Indexes for table `admins`
+-- Chỉ mục cho bảng `admins`
 --
 ALTER TABLE `admins`
   ADD PRIMARY KEY (`s_no`);
 
 --
--- Indexes for table `attendence`
+-- Chỉ mục cho bảng `attendence`
 --
 ALTER TABLE `attendence`
   ADD PRIMARY KEY (`s_no`);
 
 --
--- Indexes for table `buses`
+-- Chỉ mục cho bảng `buses`
 --
 ALTER TABLE `buses`
   ADD PRIMARY KEY (`s_no`);
 
 --
--- Indexes for table `bus_root`
+-- Chỉ mục cho bảng `bus_root`
 --
 ALTER TABLE `bus_root`
   ADD PRIMARY KEY (`s_no`);
 
 --
--- Indexes for table `bus_staff`
+-- Chỉ mục cho bảng `bus_staff`
 --
 ALTER TABLE `bus_staff`
   ADD PRIMARY KEY (`s_no`);
 
 --
--- Indexes for table `classes`
+-- Chỉ mục cho bảng `classes`
 --
 ALTER TABLE `classes`
   ADD PRIMARY KEY (`s_no`);
 
 --
--- Indexes for table `exams`
+-- Chỉ mục cho bảng `exams`
 --
 ALTER TABLE `exams`
   ADD PRIMARY KEY (`s_no`);
 
 --
--- Indexes for table `feedback`
+-- Chỉ mục cho bảng `feedback`
 --
 ALTER TABLE `feedback`
   ADD PRIMARY KEY (`s_no`);
 
 --
--- Indexes for table `fee_record`
+-- Chỉ mục cho bảng `fee_record`
 --
 ALTER TABLE `fee_record`
   ADD PRIMARY KEY (`s_no`);
 
 --
--- Indexes for table `leaves`
+-- Chỉ mục cho bảng `leaves`
 --
 ALTER TABLE `leaves`
   ADD PRIMARY KEY (`s_no`);
 
 --
--- Indexes for table `marks`
+-- Chỉ mục cho bảng `marks`
 --
 ALTER TABLE `marks`
   ADD PRIMARY KEY (`s_no`);
 
 --
--- Indexes for table `notes`
+-- Chỉ mục cho bảng `notes`
 --
 ALTER TABLE `notes`
   ADD PRIMARY KEY (`s_no`);
 
 --
--- Indexes for table `notice`
+-- Chỉ mục cho bảng `notice`
 --
 ALTER TABLE `notice`
   ADD PRIMARY KEY (`s_no`);
 
 --
--- Indexes for table `notifications`
+-- Chỉ mục cho bảng `notifications`
 --
 ALTER TABLE `notifications`
   ADD PRIMARY KEY (`s_no`);
 
 --
--- Indexes for table `payroll`
+-- Chỉ mục cho bảng `payroll`
 --
 ALTER TABLE `payroll`
   ADD PRIMARY KEY (`s_no`);
 
 --
--- Indexes for table `reminders`
+-- Chỉ mục cho bảng `reminders`
 --
 ALTER TABLE `reminders`
   ADD PRIMARY KEY (`s_no`);
 
 --
--- Indexes for table `students`
+-- Chỉ mục cho bảng `students`
 --
 ALTER TABLE `students`
   ADD PRIMARY KEY (`s_no`);
 
 --
--- Indexes for table `student_guardian`
+-- Chỉ mục cho bảng `student_guardian`
 --
 ALTER TABLE `student_guardian`
   ADD PRIMARY KEY (`s_no`);
 
 --
--- Indexes for table `subjects`
+-- Chỉ mục cho bảng `subjects`
 --
 ALTER TABLE `subjects`
   ADD PRIMARY KEY (`s_no`);
 
 --
--- Indexes for table `syllabus`
+-- Chỉ mục cho bảng `syllabus`
 --
 ALTER TABLE `syllabus`
   ADD PRIMARY KEY (`s_no`);
 
 --
--- Indexes for table `teachers`
+-- Chỉ mục cho bảng `teachers`
 --
 ALTER TABLE `teachers`
   ADD PRIMARY KEY (`s_no`);
 
 --
--- Indexes for table `teacher_guardian`
+-- Chỉ mục cho bảng `teacher_guardian`
 --
 ALTER TABLE `teacher_guardian`
   ADD PRIMARY KEY (`s_no`);
 
 --
--- Indexes for table `time_table`
+-- Chỉ mục cho bảng `time_table`
 --
 ALTER TABLE `time_table`
   ADD PRIMARY KEY (`s_no`);
 
 --
--- Indexes for table `users`
+-- Chỉ mục cho bảng `users`
 --
 ALTER TABLE `users`
   ADD PRIMARY KEY (`s_no`);
 
 --
--- AUTO_INCREMENT for dumped tables
+-- AUTO_INCREMENT cho các bảng đã đổ
 --
 
 --
--- AUTO_INCREMENT for table `admins`
+-- AUTO_INCREMENT cho bảng `admins`
 --
 ALTER TABLE `admins`
   MODIFY `s_no` int(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
--- AUTO_INCREMENT for table `attendence`
+-- AUTO_INCREMENT cho bảng `attendence`
 --
 ALTER TABLE `attendence`
   MODIFY `s_no` int(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
--- AUTO_INCREMENT for table `buses`
+-- AUTO_INCREMENT cho bảng `buses`
 --
 ALTER TABLE `buses`
   MODIFY `s_no` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 
 --
--- AUTO_INCREMENT for table `bus_root`
+-- AUTO_INCREMENT cho bảng `bus_root`
 --
 ALTER TABLE `bus_root`
   MODIFY `s_no` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
 
 --
--- AUTO_INCREMENT for table `bus_staff`
+-- AUTO_INCREMENT cho bảng `bus_staff`
 --
 ALTER TABLE `bus_staff`
   MODIFY `s_no` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
--- AUTO_INCREMENT for table `classes`
+-- AUTO_INCREMENT cho bảng `classes`
 --
 ALTER TABLE `classes`
   MODIFY `s_no` int(10) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `exams`
+-- AUTO_INCREMENT cho bảng `exams`
 --
 ALTER TABLE `exams`
   MODIFY `s_no` int(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
--- AUTO_INCREMENT for table `feedback`
+-- AUTO_INCREMENT cho bảng `feedback`
 --
 ALTER TABLE `feedback`
   MODIFY `s_no` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
--- AUTO_INCREMENT for table `fee_record`
+-- AUTO_INCREMENT cho bảng `fee_record`
 --
 ALTER TABLE `fee_record`
   MODIFY `s_no` int(11) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `leaves`
+-- AUTO_INCREMENT cho bảng `leaves`
 --
 ALTER TABLE `leaves`
   MODIFY `s_no` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
 
 --
--- AUTO_INCREMENT for table `marks`
+-- AUTO_INCREMENT cho bảng `marks`
 --
 ALTER TABLE `marks`
   MODIFY `s_no` int(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
--- AUTO_INCREMENT for table `notes`
+-- AUTO_INCREMENT cho bảng `notes`
 --
 ALTER TABLE `notes`
   MODIFY `s_no` int(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
--- AUTO_INCREMENT for table `notice`
+-- AUTO_INCREMENT cho bảng `notice`
 --
 ALTER TABLE `notice`
   MODIFY `s_no` int(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=54;
 
 --
--- AUTO_INCREMENT for table `notifications`
+-- AUTO_INCREMENT cho bảng `notifications`
 --
 ALTER TABLE `notifications`
   MODIFY `s_no` int(20) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `payroll`
+-- AUTO_INCREMENT cho bảng `payroll`
 --
 ALTER TABLE `payroll`
   MODIFY `s_no` int(11) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `reminders`
+-- AUTO_INCREMENT cho bảng `reminders`
 --
 ALTER TABLE `reminders`
   MODIFY `s_no` int(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=72;
 
 --
--- AUTO_INCREMENT for table `students`
+-- AUTO_INCREMENT cho bảng `students`
 --
 ALTER TABLE `students`
   MODIFY `s_no` int(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
--- AUTO_INCREMENT for table `student_guardian`
+-- AUTO_INCREMENT cho bảng `student_guardian`
 --
 ALTER TABLE `student_guardian`
   MODIFY `s_no` int(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
--- AUTO_INCREMENT for table `subjects`
+-- AUTO_INCREMENT cho bảng `subjects`
 --
 ALTER TABLE `subjects`
   MODIFY `s_no` int(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
--- AUTO_INCREMENT for table `syllabus`
+-- AUTO_INCREMENT cho bảng `syllabus`
 --
 ALTER TABLE `syllabus`
   MODIFY `s_no` int(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
 
 --
--- AUTO_INCREMENT for table `teachers`
+-- AUTO_INCREMENT cho bảng `teachers`
 --
 ALTER TABLE `teachers`
   MODIFY `s_no` int(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
--- AUTO_INCREMENT for table `teacher_guardian`
+-- AUTO_INCREMENT cho bảng `teacher_guardian`
 --
 ALTER TABLE `teacher_guardian`
   MODIFY `s_no` int(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
--- AUTO_INCREMENT for table `time_table`
+-- AUTO_INCREMENT cho bảng `time_table`
 --
 ALTER TABLE `time_table`
   MODIFY `s_no` int(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
--- AUTO_INCREMENT for table `users`
+-- AUTO_INCREMENT cho bảng `users`
 --
 ALTER TABLE `users`
   MODIFY `s_no` int(15) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
