@@ -7,19 +7,19 @@
           <!-- Display visitor count -->
           <p>SCHOOL MANAGEMENT SYSTEM</p>
           <!-- Display time zone -->
-          <p>Q9P3+75H, My Town, My city, My Country </p>
+          <p>1 Trinh Van Bo, Xuan Phuong, Nam Tu Liem, Ha Noi </p>
         </div>
         <div class="col-md-4">
           <p>Time Zone: <?php
-                        date_default_timezone_set('Asia/Kolkata');
-                        $current_time = date('D M d Y H:i:s \G\M\TO (T)');
+                        date_default_timezone_set('Asia/Ho_Chi_Minh');
+                        $current_time = date('D M d Y H:i:s \G\M\T+7 (T)');
                         echo "<p>$current_time</p>";
                         ?></p>
         </div>
         <div class="col-md-4">
           <div class="footer-links">
            
-          <p>follow us on</p>
+          <p>Follow us on</p>
           </div>
           <div class="social-icons">
             <a href="#"><i class="fab fa-facebook-f facebook"></i></a>
